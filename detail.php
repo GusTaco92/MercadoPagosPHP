@@ -142,9 +142,9 @@
                                 // Crea un objeto de preferencia
                                 $preference = new MercadoPago\Preference();
                                 $preference->back_urls = array(
-                                    "success" => "http://localhost/exito.php",
-                                    "failure" => "http://localhost/fallo.php",
-                                    "pending" => "http://localhost/pendiente.php"
+                                    "success" => "https://mpagos.herokuapp.com/exito.php",
+                                    "failure" => "https://mpagos.herokuapp.com/fallo.php",
+                                    "pending" => "https://mpagos.herokuapp.com/pendiente.php"
                                 );
                                 $preference->auto_return = "approved";
                                 $preference->payment_methods = array(
