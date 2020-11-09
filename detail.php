@@ -139,6 +139,8 @@
                                 require __DIR__ .  '/vendor/autoload.php';
                                 
                                 MercadoPago\SDK::setAccessToken('APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181');
+                                MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
+
                                 // Crea un objeto de preferencia
                                 $preference = new MercadoPago\Preference();
                                 $preference->back_urls = array(
@@ -170,6 +172,7 @@
                                 $item->description = "Dispositivo móvil de Tienda e-commerce";
                                 $item->quantity = $_POST['unit'];
                                 $item->unit_price = $_POST['price'];
+                                $item->picture_url = $_POST['img'];
                                 $preference->items = array($item);
                                 $preference->save();
 
