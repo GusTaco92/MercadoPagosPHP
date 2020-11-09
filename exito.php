@@ -6,3 +6,4 @@ echo "collection id ".$_GET['collection_id']."<BR>";
 echo "payment id ".$_GET['payment_id']."<BR>";
 
 ?>
+<a href="https://mpagos.herokuapp.com/" target="_blank" rel="noopener noreferrer">Regresar al inicio</a>
